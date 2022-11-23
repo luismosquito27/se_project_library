@@ -1,4 +1,11 @@
 /* Add your class here */
+.page {
+  width: 1600px;
+  margin: 0 auto;
+  font-family: "Helvetice Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 .header {
   height: 100vh;
@@ -12,16 +19,24 @@
 }
 
 .nav {
-  /* Add flex properties here */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 
 .logo {
+  width: 196px;
+  height: 60px;
 }
 
 .nav__links {
   list-style: none;
   padding-left: 0;
   margin-top: 8px;
+  display: flex;
+  align-items: flex-end;
+  column-gap: 20px;
 }
 
 .nav__link {
@@ -35,18 +50,23 @@
 .header__title {
   font-size: 66px;
   line-height: 76px;
-  font-weight: 500;
   margin: 150px 0 0;
+  max-width: 544px;
+  font-weight: 500;
 }
 
 .header__description {
   font-size: 20px;
   line-height: 30px;
   margin: 32px 0 0;
+  max-width: 456px;
 }
 
 .header__image {
-  /* Write styles here */
+  position: absolute;
+  top: 135px;
+  right: 20px;
+  max-width: 636px;
   z-index: 1;
 }
 
@@ -105,8 +125,8 @@
 }
 
 .card__content {
-  width: 100%;
-  height: 100%;
+  width: 360px, 100%;
+  height: 420px, 100%;
   display: flex;
   flex-direction: column;
 }
@@ -157,7 +177,7 @@
   font-size: 44px;
   font-weight: 500;
   line-height: 52px;
-  margin: 32px 0;
+  margin: 32px;
 }
 
 .events__info-section {
@@ -170,7 +190,6 @@
   margin-bottom: 4px;
   font-weight: 500;
 }
-
 .event-info__icon {
   background-repeat: no-repeat;
   background-position: center;
@@ -179,10 +198,14 @@
 
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__text {
@@ -205,65 +228,70 @@
 /* Add the hover state styles for .events__more here */
 
 .events__cover {
-  /* flex-grow: 1;
+  flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 780px;
   max-width: 780px;
-  position: relative; */
+  position: relative;
 }
 
 .events__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person {
-  /* position: absolute;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px; */
+  gap: 10px;
 }
 
 .person_name_feynman {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: -30px;
+  left: 319px;
 }
 
 .person_name_burbidge {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 96px;
+  right: 125px;
 }
 
 .person_name_cannon {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 18px;
+  right: 216px;
 }
 
 .person_name_mitchell {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 82px;
+  left: 142px;
 }
 
 .person_name_tarter {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 79px;
+  left: 159px;
 }
 
 .person__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person__image_size_l {
-  /* width: 140px; */
+  width: 140px;
 }
 
 .person__image_size_m {
-  /* width: 100px; */
+  width: 100px;
 }
 
 .person__image_size_s {
-  /* width: 80px; */
+  width: 80px;
 }
 
 .person__caption {
-  /* text-align: center;
+  text-align: center;
   font-size: 14px;
-  margin: 0; */
+  margin: 0;
 }
 
 .membership {
@@ -285,7 +313,6 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
 }
 
 .step {
@@ -324,6 +351,7 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
 }
 
 .about__content {
@@ -342,19 +370,31 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  top: -121px;
+  left: -91px;
+  z-index: 0;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: black;
+  color: white;
+  padding: 60px 102px 60px 80px;
+  min-height: 224px;
 }
 
 .footer__columns {
+  position: relative;
+  display: flex;
 }
 
 .footer__column_content_hours {
+  margin-left: auto;
 }
 
 .footer__column_content_social {
+  margin-left: 100px;
 }
 
 .footer__logo {
@@ -381,7 +421,14 @@
 }
 
 .footer__social-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
+}
+
+.page {
+  width: 1600px;
 }

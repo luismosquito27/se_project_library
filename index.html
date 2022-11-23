@@ -10,47 +10,58 @@
 
   <body>
     <!-- Wrap the entire page content in a new div with the page class. Remember to add the closing tag -->
-    <div class="header">
-      <div class="nav">
-        <img
-          src="./images/logo.png"
-          alt="Practicum Library Logo"
-          class="logo"
-        />
-        <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
-        <ul class="nav__links">
-          <li>
-            <a class="nav__link">Staff picks</a>
-          </li>
-          <li>
-            <a class="nav__link">Events</a>
-          </li>
-          <li>
-            <a class="nav__link">Become a member</a>
-          </li>
-          <li>
-            <a class="nav__link">About</a>
-          </li>
-          <li>
-            <a class="nav__link">Contacts</a>
-          </li>
-        </ul>
-      </div>
-      <h1 class="header__title">Welcome to the Practicum Library</h1>
-      <p class="header__description">
-        We're pleased to open our library doors to everyone! Come and expand
-        your development knowledge, or just use this lovely spot to work or
-        study. This is a cool place for cool students!
-      </p>
-      <!-- <img src="./images/inside_the_library.png" alt="Illustration 'Inside the library'" class="header__image" > -->
-      <div class="header__footer">
-        <a class="header__link">About the library &darr;</a>
-        <p class="header__address">200 Success Avenue, The Town of Practicum</p>
-      </div>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo.png"
+            alt="Practicum Library Logo"
+            class="logo"
+          />
+
+          <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
+          <ul class="nav__links">
+            <li>
+              <a class="nav__link" href="#staff-picks">staff picks</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#events">events</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#become-a-member">become a member</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#about">about</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#footer">footer</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">Welcome to the Practicum Library</h1>
+        <p class="header__description">
+          we're pleased to open our library doors to everyone! Come and expand
+          your development knowledge, or just use this lovely spot to work or
+          study. This is a cool place for cool students!
+        </p>
+        <div>
+          <img
+            src="./images/inside_the_library.png"
+            alt="Inside the library"
+            class="header__image"
+          />
+        </div>
+        <div class="header__footer">
+          <a class="header__link" href="#about">About the library &darr;</a>
+          <p class="header__address">
+            200 Success Avenue, The Town of Practicum
+          </p>
+        </div>
+      </header>
     </div>
 
-    <div class="content">
-      <div class="staff">
+    <main class="content">
+      <section class="staff" id="staff-picks">
         <h2 class="staff__title">Staff picks</h2>
         <p class="staff__subtitle">That our readers love</p>
         <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
@@ -121,9 +132,9 @@
             </div>
           </li>
         </ul>
-      </div>
+      </section>
 
-      <div class="events">
+      <section class="events" id="events">
         <div class="events__content">
           <h2 class="events__heading">Upcoming events:</h2>
           <h3 class="events__title">
@@ -155,9 +166,56 @@
           <a href="#" class="events__more">More events &rarr;</a>
         </div>
         <!-- Start creating the composition here -->
-      </div>
+        <div class="events__cover">
+          <img
+            class="events__image"
+            src="./images/cafe.png"
+            alt=" Illustration of Cafe"
+          />
+          <div class="person person_name_feynman">
+            <p class="person__caption">Joan Feynman</p>
+            <img
+              class="person__image person__image_size_l"
+              src="./images/person_feynman.png"
+              alt="Joan Feynman"
+            />
+          </div>
+          <div class="person person_name_burbidge">
+            <p class="person__caption">Marget Burbidge</p>
+            <img
+              class="person__image person__image_size_m"
+              src="./images/person_burbidge.png"
+              alt="Marget Burbidge"
+            />
+          </div>
+          <div class="person person_name_cannon">
+            <img
+              class="person__image person__image_size_m"
+              src="./images/person_cannon.png"
+              alt="Annie Jump Cannon"
+            />
+            <p class="person__caption">Annie Jump Cannon</p>
+          </div>
+          <div class="person person_name_mitchell">
+            <img
+              class="person__image person__image_size_s"
+              src="./images/person_mitchell.png"
+              alt="Marie Mitchell"
+            />
+            <p class="person__caption">Marie Mitchell</p>
+          </div>
+          <div class="person person_name_tarter">
+            <p class="person__caption">Jill Tarter</p>
+            <img
+              class="person__image person__image_size_m"
+              src="./images/person_tarter.png"
+              alt="Jill Tarter"
+            />
+          </div>
+        </div>
+      </section>
 
-      <div class="membership">
+      <section class="membership" id="become-a-member">
         <h2 class="membership__title">Becoming a library member is easy!</h2>
         <ul class="membership__steps">
           <li class="step">
@@ -211,8 +269,9 @@
             </p>
           </li>
         </ul>
-      </div>
-      <div class="about">
+      </section>
+
+      <section class="about" id="about">
         <h2 class="about__title">About the library</h2>
         <div class="about__content">
           <p class="about__paragraph">
@@ -234,10 +293,10 @@
           </p>
         </div>
         <!-- <div class="about__circle"></div> -->
-      </div>
-    </div>
-    <div class="footer">
-      <!-- The time to mark up the footer has come, you can do it 💪 -->
-    </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <!-- The time to mark up the footer has come, you can do it 💪-->
+    </footer>
   </body>
 </html>
