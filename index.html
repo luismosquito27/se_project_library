@@ -65,7 +65,7 @@
         <h2 class="staff__title">Staff picks</h2>
         <p class="staff__subtitle">That our readers love</p>
         <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-        <ul>
+        <ul class="staff__card">
           <li class="card">
             <div class="card__content">
               <h3 class="card__title">Introduction to Algorithms</h3>
@@ -292,11 +292,53 @@
             the American Geophysical Union.
           </p>
         </div>
-        <!-- <div class="about__circle"></div> -->
+        <div class="about__circle"></div>
       </section>
     </main>
     <footer class="footer" id="footer">
       <!-- The time to mark up the footer has come, you can do it 💪-->
+      <div class="footer__columns">
+        <div class="footer__column">
+          <img
+            class="footer__logo"
+            src="./images/logo_practicum.svg"
+            alt="Practicum Logo"
+          />
+        </div>
+        <div class="footer__column footer__column_hours">
+          <h2 class="footer__heading">Hours</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+            <li class="footer__list-item">Weekends: 10am - 6pm</li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_social">
+          <h2 class="footer__heading">Social Media</h2>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__column-link" href="#">
+                <img
+                  class="footer__social-icon"
+                  src="./images/facebook_white.svg"
+                  alt="Facebook Logo"
+                />
+                Facebook
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__column-link" href="#">
+                <img
+                  class="footer__social-icon"
+                  src="./images/instagram_white.svg"
+                  alt="Instagram Logo"
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p clas="footer__column-copyright">&copy: 20222 Luis Mosqueda</p>
     </footer>
   </body>
 </html>
