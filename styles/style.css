@@ -1,6 +1,7 @@
 /* Add your class here */
 .page {
-  width: 1600px;
+  min-width: 1100px;
+  max-width: 1600px;
   margin: 0 auto;
   font-family: "Helvetice Neue", Arial, sans-serif;
   font-size: 16px;
@@ -501,5 +502,6 @@
 }
 
 .page {
-  width: 1600px;
+  min-width: 1100px;
+  max-width: 1600px;
 }
