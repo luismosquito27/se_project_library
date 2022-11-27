@@ -3,7 +3,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: "Helvetice Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
@@ -128,7 +128,7 @@
   gap: 40px;
   list-style: none;
   padding-left: 0;
-  margin: auto;
+  margin: 68px auto 0;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -140,20 +140,12 @@
   box-sizing: border-box;
   height: 420px;
   width: 360px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 68px;
-  max-width: 760px;
-  justify-content: center;
 }
 
-.card__content {
+.card__content:flex-direction {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .card__title {
@@ -202,7 +194,7 @@
   font-size: 44px;
   font-weight: 500;
   line-height: 52px;
-  margin: 32px;
+  margin: 32px 0;
 }
 
 .events__info-section {
@@ -414,7 +406,7 @@
 
 .footer {
   box-sizing: border-box;
-  background-color: black;
+  background-color: #1f1f1f;
   padding: 60px 102px 60px 80px;
   min-height: 224px;
   color: #fff;
@@ -422,15 +414,13 @@
 
 .footer__columns {
   display: flex;
-  margin-left: auto;
 }
 
 .footer__column_hours {
   margin-left: auto;
-  height: 84px;
 }
 
-.footer__columna_social {
+.footer__column_social {
   margin-left: 100px;
   height: 84px;
 }
@@ -438,32 +428,23 @@
 .footer__logo {
   width: 116px;
   height: 21px;
-  display: flex;
-  margin-right: auto;
 }
 
 .footer__list {
   /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
-  margin-top: 0;
   margin: 0;
   font-size: 16px;
-  font-family: Helvetica neue, arial, sans-serif;
   line-height: 20px;
 }
 
 .footer__list-item {
   color: #fff;
-  padding-bottom: 16px;
+  padding-bottom: 0px;
   margin-bottom: 0px;
   line-height: 20px;
   margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.footer__heading {
-  color: #fff;
 }
 
 .footer__column-heading {
@@ -489,16 +470,14 @@
 .footer__social-icon {
   height: 16px;
   width: 16px;
+  margin-right: 10px;
 }
 
-.footer__column-copyrights {
+.footer__copyrights {
   margin-bottom: 0;
   color: #fff;
-  position: relative;
   display: flex;
   line-height: 20px;
-  bottom: 0;
-  left: 0;
 }
 
 .page {
