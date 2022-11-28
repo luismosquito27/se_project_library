@@ -86,17 +86,15 @@
   justify-content: space-between;
   box-sizing: border-box;
 }
-
-.header__link:hover {
-  color: #2f80ed;
-  text-decoration: none;
-}
-
 /* Add the hover state styles for .header__link here */
 
 .header__address {
   margin: 0;
   color: #838383;
+}
+
+.header__link {
+  text-decoration: none;
 }
 
 .staff {
@@ -121,7 +119,7 @@
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
-.staff__card {
+.staff__cards {
   max-width: 760px;
   margin-top: 68px;
   display: flex;
@@ -236,7 +234,7 @@
   margin: 40px 0 60px;
 }
 
-.events__more {
+.events__more:hover {
   margin-top: 60px;
   color: #2f80ed;
   text-decoration: none;
@@ -416,11 +414,11 @@
   display: flex;
 }
 
-.footer__column_hours {
+.footer__column_content_hours {
   margin-left: auto;
 }
 
-.footer__column_social {
+.footer__column_content_social {
   margin-left: 100px;
   height: 84px;
 }
