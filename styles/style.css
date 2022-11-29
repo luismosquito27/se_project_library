@@ -94,6 +94,10 @@
 }
 
 .header__link:hover {
+  color: #1f69c9;
+}
+
+.header__link {
   color: #2f80ed;
   text-decoration: none;
 }
@@ -237,12 +241,13 @@
 }
 
 .events__more:hover {
-  margin-top: 60px;
   color: #1f69c9;
 }
 
 .events__more {
   text-decoration: none;
+  margin-top: 60px;
+  color: #2f80ed;
 }
 
 /* Add the hover state styles for .events__more here */
@@ -443,7 +448,7 @@
 
 .footer__list-item:last-of-type {
   color: #fff;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   margin-bottom: 0px;
   line-height: 20px;
   margin-top: 0px;
