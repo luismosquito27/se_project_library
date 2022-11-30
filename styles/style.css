@@ -447,8 +447,11 @@
 }
 
 .footer__list-item:last-of-type {
+  padding-bottom: 0px;
+}
+
+.footer__list-item {
   color: #fff;
-  padding-bottom: 16px;
   margin-bottom: 0px;
   line-height: 20px;
   margin-top: 0px;
